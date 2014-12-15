@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET = kimdotcoin-qt
-macx:TARGET = "Kimdotcoin-Qt"
+TARGET = dotcoin-qt
+macx:TARGET = "Dotcoin-Qt"
 VERSION = 0.8.6
 INCLUDEPATH += src src/json src/qt
 QT += network
