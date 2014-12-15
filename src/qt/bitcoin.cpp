@@ -100,7 +100,7 @@ static void InitMessage(const std::string &message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("kimdotcoin-core", psz).toStdString();
+    return QCoreApplication::translate("dotcoin-core", psz).toStdString();
 }
 
 /* Handle runaway exceptions. Shows a message box with the problem and quits the program.
@@ -141,8 +141,8 @@ int main(int argc, char *argv[])
     if (!boost::filesystem::is_directory(GetDataDir(false)))
     {
         // This message can not be translated, as translation is not initialized yet
-        // (which not yet possible because lang=XX can be overridden in kimdotcoin.conf in the data directory)
-        QMessageBox::critical(0, "Kimdotcoin",
+        // (which not yet possible because lang=XX can be overridden in dotcoin.conf in the data directory)
+        QMessageBox::critical(0, "Dotcoin",
                               QString("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
@@ -265,7 +265,7 @@ int main(int argc, char *argv[])
                 window.removeAllWallets();
                 guiref = 0;
             }
-            // Shutdown the core and its threads, but don't exit Kimdotcoin-Qt here
+            // Shutdown the core and its threads, but don't exit Dotcoin-Qt here
             threadGroup.interrupt_all();
             threadGroup.join_all();
             Shutdown();
