@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dotcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1036,7 +1037,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Kimdotcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Dotcoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1048,10 +1049,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Kimdotcoin";
+    return pathRet / "Dotcoin";
 #else
     // Unix
-    return pathRet / ".kimdotcoin";
+    return pathRet / ".dotcoin";
 #endif
 #endif
 }
@@ -1090,7 +1091,7 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "kimdotcoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "dotcoin.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1124,7 +1125,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "kimdotcoind.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "dotcoind.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
