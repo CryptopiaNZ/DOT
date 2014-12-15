@@ -1,30 +1,30 @@
-Kimdotcoin integration/staging tree
+Dotcoin integration/staging tree
 ================================
 
-http://kimdotcoin.co.nz
+http://cryptopia.co.nz
 
 Copyright (c) 2009-2013 Bitcoin Developers
-Copyright (c) 2014-2014 KimDotCoin Developers
+Copyright (c) 2014-2014 DotCoin Developers
 
-What is Kimdotcoin?
+What is Dotcoin?
 ----------------
 
-Kimdotcoin is an experimental new digital currency that enables instant payments to
-anyone, anywhere in the world. Kimdotcoin uses peer-to-peer technology to operate
+Dotcoin is an experimental new digital currency that enables instant payments to
+anyone, anywhere in the world. Dotcoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Kimdotcoin is also the name of the open source
+out collectively by the network. Dotcoin is also the name of the open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Kimdotcoin client software, see http://kimdotcoin.co.nz
+the Dotcoin client software, see http://cryptopia.co.nz
 
 License
 -------
 
-Kimdotcoin is released under the terms of the MIT license. See `COPYING` for more
+Dotcoin is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
-Kimdotcoin is based on Bitcoin.
+Dotcoin is based on Bitcoin.
 Its development tracks Bitcoin's, the following information applies to Bitcoin's developemnt.
 Development process
 -------------------
@@ -32,7 +32,7 @@ Development process
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-If it is a simple/trivial/non-controversial change, then one of the Bitcoin
+If it is a simple/trivial/non-controversial change, then one of the Dotcoin
 development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch
@@ -67,9 +67,9 @@ Unit tests for the core code are in `src/test/`. To compile and run them:
 
 Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
-    qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
+    qmake DOTCOIN_QT_TEST=1 -o Makefile.test dotcoin-qt.pro
     make -f Makefile.test
-    ./bitcoin-qt_test
+    ./dotcoin-qt_test
 
 Every pull request is built for both Windows and Linux on a dedicated server,
 and unit and sanity tests are automatically run. The binaries produced may be
