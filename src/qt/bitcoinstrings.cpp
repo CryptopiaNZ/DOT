@@ -73,7 +73,7 @@ QT_TRANSLATE_NOOP("dotcoin-core", ""
 QT_TRANSLATE_NOOP("dotcoin-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
 "your clock is wrong Dotcoin will not work properly."),
-QT_TRANSLATE_NOOP("kimdotcoin-core", ""
+QT_TRANSLATE_NOOP("dotcoin-core", ""
 "Warning: error reading wallet.dat! All keys read correctly, but transaction "
 "data or address book entries might be missing or incorrect."),
 QT_TRANSLATE_NOOP("dotcoin-core", ""
@@ -109,7 +109,7 @@ QT_TRANSLATE_NOOP("dotcoin-core", "Error initializing wallet database environmen
 QT_TRANSLATE_NOOP("dotcoin-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("dotcoin-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("dotcoin-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("dotcoin-core", "Error loading wallet.dat: Wallet requires newer version of Kimdotcoin"),
+QT_TRANSLATE_NOOP("dotcoin-core", "Error loading wallet.dat: Wallet requires newer version of Dotcoin"),
 QT_TRANSLATE_NOOP("dotcoin-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("dotcoin-core", "Error"),
 QT_TRANSLATE_NOOP("dotcoin-core", "Error: Disk space is low!"),
@@ -162,7 +162,7 @@ QT_TRANSLATE_NOOP("dotcoin-core", "Rebuild block chain index from current blk000
 QT_TRANSLATE_NOOP("dotcoin-core", "Rescan the block chain for missing wallet transactions"),
 QT_TRANSLATE_NOOP("dotcoin-core", "Rescanning..."),
 QT_TRANSLATE_NOOP("dotcoin-core", "Run in the background as a daemon and accept commands"),
-QT_TRANSLATE_NOOP("dotcoin-core", "SSL options: (see the Kimdotcoin Wiki for SSL setup instructions)"),
+QT_TRANSLATE_NOOP("dotcoin-core", "SSL options: (see the Dotcoin Wiki for SSL setup instructions)"),
 QT_TRANSLATE_NOOP("dotcoin-core", "Select the version of socks proxy to use (4-5, default: 5)"),
 QT_TRANSLATE_NOOP("dotcoin-core", "Send command to -server or kimdotcoind"),
 QT_TRANSLATE_NOOP("dotcoin-core", "Send commands to node running on <ip> (default: 127.0.0.1)"),
