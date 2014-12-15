@@ -751,6 +751,7 @@ void BitcoinGUI::handleURI(QString strURI)
 {
     // URI has to be valid
     if (!walletFrame->handleURI(strURI))
+    message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Kimdotcoin address or malformed URI parameters."),
                   CClientUIInterface::ICON_WARNING);
 }
 
