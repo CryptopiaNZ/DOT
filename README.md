@@ -1,7 +1,7 @@
 Dotcoin integration/staging tree
 ================================
 
-http://cryptopia.co.nz
+https://www.cryptopia.co.nz
 
 Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2014-2014 DotCoin Developers
@@ -16,7 +16,7 @@ out collectively by the network. Dotcoin is also the name of the open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Dotcoin client software, see http://cryptopia.co.nz
+the Dotcoin client software, see https://www.cryptopia.co.nz
 
 License
 -------
