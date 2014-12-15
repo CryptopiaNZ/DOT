@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case DOT: return QString("Kimdotcoins");
-    case mDOT: return QString("Milli-Kimdotcoins (1 / 1,000)");
-    case uDOT: return QString("Micro-Kimdotcoins (1 / 1,000,000)");
+    case DOT: return QString("Dotcoins");
+    case mDOT: return QString("Milli-Dotcoins (1 / 1,000)");
+    case uDOT: return QString("Micro-Dotcoins (1 / 1,000,000)");
     default: return QString("???");
     }
 }
