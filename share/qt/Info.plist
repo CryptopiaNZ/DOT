@@ -15,9 +15,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Kimdotcoin-Qt</string>
+	<string>Dotcoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.bitcoinfoundation.Kimdotcoin-Qt</string>
+	<string>org.bitcoinfoundation.Dotcoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>

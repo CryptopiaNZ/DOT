@@ -163,7 +163,7 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/kimdotcoin.conf are parsed in qt/bitcoin.cpp's main()
+        // If Qt is used, parameters/Dotcoin.conf are parsed in qt/bitcoin.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
@@ -174,7 +174,7 @@ bool AppInit(int argc, char* argv[])
 
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
-            // First part of help message is specific to kimdotcoind / RPC client
+            // First part of help message is specific to Dotcoind / RPC client
             std::string strUsage = _("Dotcoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
                   "  dotcoind [options]                     " + "\n" +
@@ -190,7 +190,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "kimdotcoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Dotcoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -252,7 +252,7 @@ int main(int argc, char* argv[])
 {
     bool fRet = false;
 
-    // Connect kimdotcoind signal handlers
+    // Connect Dotcoind signal handlers
     noui_connect();
 
     fRet = AppInit(argc, argv);
@@ -293,8 +293,8 @@ std::string HelpMessage()
 {
     string strUsage = _("Options:") + "\n" +
         "  -?                     " + _("This help message") + "\n" +
-        "  -conf=<file>           " + _("Specify configuration file (default: kimdotcoin.conf)") + "\n" +
-        "  -pid=<file>            " + _("Specify pid file (default: kimdotcoind.pid)") + "\n" +
+        "  -conf=<file>           " + _("Specify configuration file (default: Dotcoin.conf)") + "\n" +
+        "  -pid=<file>            " + _("Specify pid file (default: Dotcoind.pid)") + "\n" +
         "  -gen                   " + _("Generate coins (default: 0)") + "\n" +
         "  -datadir=<dir>         " + _("Specify data directory") + "\n" +
         "  -dbcache=<n>           " + _("Set database cache size in megabytes (default: 25)") + "\n" +
@@ -358,7 +358,7 @@ std::string HelpMessage()
         "  -salvagewallet         " + _("Attempt to recover private keys from a corrupt wallet.dat") + "\n" +
         "  -checkblocks=<n>       " + _("How many blocks to check at startup (default: 288, 0 = all)") + "\n" +
         "  -checklevel=<n>        " + _("How thorough the block verification is (0-4, default: 3)") + "\n" +
-        "  -txindex               " + _("Maintain a full transaction index (default: 0)") + "\n" +
+        "  -txindex               " + _("Maintain a full transaction index (default: 1)") + "\n" +
         "  -loadblock=<file>      " + _("Imports blocks from external blk000??.dat file") + "\n" +
         "  -reindex               " + _("Rebuild block chain index from current blk000??.dat files") + "\n" +
         "  -par=<n>               " + _("Set the number of script verification threads (up to 16, 0 = auto, <0 = leave that many cores free, default: 0)") + "\n" +
@@ -368,7 +368,7 @@ std::string HelpMessage()
         "  -blockmaxsize=<n>      "   + _("Set maximum block size in bytes (default: 250000)") + "\n" +
         "  -blockprioritysize=<n> "   + _("Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)") + "\n" +
 
-        "\n" + _("SSL options: (see the Kimdotcoin Wiki for SSL setup instructions)") + "\n" +
+        "\n" + _("SSL options: (see the Dotcoin Wiki for SSL setup instructions)") + "\n" +
         "  -rpcssl                                  " + _("Use OpenSSL (https) for JSON-RPC connections") + "\n" +
         "  -rpcsslcertificatechainfile=<file.cert>  " + _("Server certificate file (default: server.cert)") + "\n" +
         "  -rpcsslprivatekeyfile=<file.pem>         " + _("Server private key (default: server.pem)") + "\n" +
@@ -872,6 +872,12 @@ bool AppInit2(boost::thread_group& threadGroup)
                     break;
                 }
 
+
+				 if (fTxIndex != GetBoolArg("-txindex", true)) { //txindex = 1 by default
+				strLoadError = _("You need to rebuild the database");
+                    break;
+                }
+				
                 uiInterface.InitMessage(_("Verifying blocks..."));
                 if (!VerifyDB()) {
                     strLoadError = _("Corrupted block database detected");
@@ -902,9 +908,6 @@ bool AppInit2(boost::thread_group& threadGroup)
             }
         }
     }
-
-    if (mapArgs.count("-txindex") && fTxIndex != GetBoolArg("-txindex", false))
-        return InitError(_("You need to rebuild the databases using -reindex to change -txindex"));
 
     // as LoadBlockIndex can take several minutes, it's possible the user
     // requested to kill bitcoin-qt during the last operation. If so, exit.
@@ -964,10 +967,10 @@ bool AppInit2(boost::thread_group& threadGroup)
             InitWarning(msg);
         }
         else if (nLoadWalletRet == DB_TOO_NEW)
-            strErrors << _("Error loading wallet.dat: Wallet requires newer version of Kimdotcoin") << "\n";
+            strErrors << _("Error loading wallet.dat: Wallet requires newer version of Dotcoin") << "\n";
         else if (nLoadWalletRet == DB_NEED_REWRITE)
         {
-            strErrors << _("Wallet needed to be rewritten: restart Kimdotcoin to complete") << "\n";
+            strErrors << _("Wallet needed to be rewritten: restart Dotcoin to complete") << "\n";
             printf("%s", strErrors.str().c_str());
             return InitError(strErrors.str());
         }

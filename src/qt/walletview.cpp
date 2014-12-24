@@ -17,6 +17,7 @@
 #include "overviewpage.h"
 #include "askpassphrasedialog.h"
 #include "ui_interface.h"
+#include "blockbrowser.h"
 
 #include <QHBoxLayout>
 #include <QVBoxLayout>
@@ -33,7 +34,8 @@ WalletView::WalletView(QWidget *parent, BitcoinGUI *_gui):
 {
     // Create tabs
     overviewPage = new OverviewPage();
-
+	blockBrowser = new BlockBrowser(this);
+	
     transactionsPage = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout();
     QHBoxLayout *hbox_buttons = new QHBoxLayout();
@@ -62,7 +64,8 @@ WalletView::WalletView(QWidget *parent, BitcoinGUI *_gui):
     addWidget(addressBookPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
-
+	addWidget(blockBrowser);
+	
     // Clicking on a transaction on the overview page simply sends you to transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), this, SLOT(gotoHistoryPage()));
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), transactionView, SLOT(focusTransaction(QModelIndex)));
@@ -196,6 +199,13 @@ void WalletView::gotoVerifyMessageTab(QString addr)
     if (!addr.isEmpty())
         signVerifyMessageDialog->setAddress_VM(addr);
 }
+
+void WalletView::gotoBlockBrowser()
+{
+    gui->getBlockAction()->setChecked(true);
+    setCurrentWidget(blockBrowser);
+}
+
 
 bool WalletView::handleURI(const QString& strURI)
 {

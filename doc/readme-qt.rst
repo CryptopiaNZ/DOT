@@ -1,4 +1,4 @@
-Kimdotcoin-Qt: Qt4 GUI for Bitcoin
+Dotcoin-Qt: Qt4 GUI for Bitcoin
 ===============================
 
 Build instructions

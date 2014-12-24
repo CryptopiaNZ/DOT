@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Kimdotcoin</source>
-        <translation>Om Kimdotcoin</translation>
+        <source>About Dotcoin</source>
+        <translation>Om Dotcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Kimdotcoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Kimdotcoin&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Dotcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Dotcoin&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+0"/>
-        <source>The Kimdotcoin developers</source>
-        <translation>Kimdotcoin-udviklerne</translation>
+        <source>The Dotcoin developers</source>
+        <translation>Dotcoin-udviklerne</translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Kimdotcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dette er dine Kimdotcoin-adresser til at modtage betalinger med. Du kan give en forskellig adresse til hver afsender, så du kan holde styr på, hvem der betaler dig.</translation>
+        <source>These are your Dotcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dette er dine Dotcoin-adresser til at modtage betalinger med. Du kan give en forskellig adresse til hver afsender, så du kan holde styr på, hvem der betaler dig.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,8 +82,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Kimdotcoin address</source>
-        <translation>Underskriv en besked for at bevise, at en Kimdotcoin-adresse tilhører dig</translation>
+        <source>Sign a message to prove you own a Dotcoin address</source>
+        <translation>Underskriv en besked for at bevise, at en Dotcoin-adresse tilhører dig</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Kimdotcoin address</source>
-        <translation>Efterprøv en besked for at sikre, at den er underskrevet med den angivne Kimdotcoin-adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified Dotcoin address</source>
+        <translation>Efterprøv en besked for at sikre, at den er underskrevet med den angivne Dotcoin-adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Kimdotcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Disse er dine Kimdotcoin-adresser for at sende betalinger. Tjek altid beløb og modtageradresse, inden du sender kimdotcoins.</translation>
+        <source>These are your Dotcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Disse er dine Dotcoin-adresser for at sende betalinger. Tjek altid beløb og modtageradresse, inden du sender Dotcoin.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -138,7 +138,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     <message>
         <location line="+1"/>
         <source>Send &amp;Coins</source>
-        <translation>Send kimdotcoins</translation>
+        <translation>Send Dotcoin</translation>
     </message>
     <message>
         <location line="+260"/>
@@ -275,8 +275,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="-56"/>
-        <source>Kimdotcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your kimdotcoins from being stolen by malware infecting your computer.</source>
-        <translation>Kimdotcoin vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine kimdotcoins fuldt ud mod at blive stjålet af malware på din computer.</translation>
+        <source>Dotcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dotcoin from being stolen by malware infecting your computer.</source>
+        <translation>Dotcoin vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine Dotcoin fuldt ud mod at blive stjålet af malware på din computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -321,9 +321,9 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
 </context>
 <context>
-    <name>KimdotcoinGUI</name>
+    <name>DotcoinGUI</name>
     <message>
-        <location filename="../kimdotcoingui.cpp" line="+233"/>
+        <location filename="../Dotcoingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
         <translation>Underskriv besked...</translation>
     </message>
@@ -374,8 +374,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Kimdotcoin</source>
-        <translation>Vis informationer om Kimdotcoin</translation>
+        <source>Show information about Dotcoin</source>
+        <translation>Vis informationer om Dotcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Kimdotcoin address</source>
-        <translation>Send kimdotcoins til en Kimdotcoin-adresse</translation>
+        <source>Send coins to a Dotcoin address</source>
+        <translation>Send Dotcoin til en Dotcoin-adresse</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Kimdotcoin</source>
-        <translation>Rediger konfigurationsindstillinger af Kimdotcoin</translation>
+        <source>Modify configuration options for Dotcoin</source>
+        <translation>Rediger konfigurationsindstillinger af Dotcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Kimdotcoin</source>
-        <translation>Kimdotcoin</translation>
+        <source>Dotcoin</source>
+        <translation>Dotcoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Kimdotcoin</source>
-        <translation>Om Kimdotcoin</translation>
+        <source>&amp;About Dotcoin</source>
+        <translation>Om Dotcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Kimdotcoin addresses to prove you own them</source>
-        <translation>Underskriv beskeder med dine Kimdotcoin-adresser for at bevise, at de tilhører dig</translation>
+        <source>Sign messages with your Dotcoin addresses to prove you own them</source>
+        <translation>Underskriv beskeder med dine Dotcoin-adresser for at bevise, at de tilhører dig</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Kimdotcoin addresses</source>
-        <translation>Efterprøv beskeder for at sikre, at de er underskrevet med de(n) angivne Kimdotcoin-adresse(r)</translation>
+        <source>Verify messages to ensure they were signed with specified Dotcoin addresses</source>
+        <translation>Efterprøv beskeder for at sikre, at de er underskrevet med de(n) angivne Dotcoin-adresse(r)</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+47"/>
-        <source>Kimdotcoin client</source>
-        <translation>Kimdotcoin-klient</translation>
+        <source>Dotcoin client</source>
+        <translation>Dotcoin-klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Kimdotcoin network</source>
-        <translation><numerusform>%n aktiv(e) forbindelse(r) til Kimdotcoin-netværket</numerusform><numerusform>%n aktiv(e) forbindelse(r) til Kimdotcoin-netværket</numerusform></translation>
+        <source>%n active connection(s) to Dotcoin network</source>
+        <translation><numerusform>%n aktiv(e) forbindelse(r) til Dotcoin-netværket</numerusform><numerusform>%n aktiv(e) forbindelse(r) til Dotcoin-netværket</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -656,8 +656,8 @@ Adresse: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Kimdotcoin address or malformed URI parameters.</source>
-        <translation>URI kan ikke fortolkes! Dette kan skyldes en ugyldig Kimdotcoin-adresse eller misdannede URI-parametre.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Dotcoin address or malformed URI parameters.</source>
+        <translation>URI kan ikke fortolkes! Dette kan skyldes en ugyldig Dotcoin-adresse eller misdannede URI-parametre.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,9 +670,9 @@ Adresse: %4
         <translation>Tegnebog er &lt;b&gt;krypteret&lt;/b&gt; og i øjeblikket &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../kimdotcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Kimdotcoin can no longer continue safely and will quit.</source>
-        <translation>Der opstod en fatal fejl. Kimdotcoin kan ikke længere fortsætte sikkert og vil afslutte.</translation>
+        <location filename="../Dotcoin.cpp" line="+111"/>
+        <source>A fatal error occurred. Dotcoin can no longer continue safely and will quit.</source>
+        <translation>Der opstod en fatal fejl. Dotcoin kan ikke længere fortsætte sikkert og vil afslutte.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Adresse: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Kimdotcoin address.</source>
-        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig Kimdotcoin-adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Dotcoin address.</source>
+        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig Dotcoin-adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adresse: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Kimdotcoin-Qt</source>
-        <translation>Kimdotcoin-Qt</translation>
+        <source>Dotcoin-Qt</source>
+        <translation>Dotcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,13 +819,13 @@ Adresse: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Kimdotcoin after logging in to the system.</source>
-        <translation>Start Kimdotcoin automatisk, når der logges ind på systemet</translation>
+        <source>Automatically start Dotcoin after logging in to the system.</source>
+        <translation>Start Dotcoin automatisk, når der logges ind på systemet</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Kimdotcoin on system login</source>
-        <translation>Start Kimdotcoin, når systemet startes</translation>
+        <source>&amp;Start Dotcoin on system login</source>
+        <translation>Start Dotcoin, når systemet startes</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -844,8 +844,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Kimdotcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn Kimdotcoin-klientens port på routeren automatisk. Dette virker kun, når din router understøtter UPnP og UPnP er aktiveret.</translation>
+        <source>Automatically open the Dotcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn Dotcoin-klientens port på routeren automatisk. Dette virker kun, når din router understøtter UPnP og UPnP er aktiveret.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -854,8 +854,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Kimdotcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Opret forbindelse til Kimdotcoin-netværket via en SOCKS-proxy (f.eks. ved tilslutning gennem Tor)</translation>
+        <source>Connect to the Dotcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Opret forbindelse til Dotcoin-netværket via en SOCKS-proxy (f.eks. ved tilslutning gennem Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -929,8 +929,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Kimdotcoin.</source>
-        <translation>Brugergrænsefladesproget kan angives her. Denne indstilling træder først i kraft, når Kimdotcoin genstartes.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Dotcoin.</source>
+        <translation>Brugergrænsefladesproget kan angives her. Denne indstilling træder først i kraft, når Dotcoin genstartes.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -940,12 +940,12 @@ Adresse: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Vælg den standard underopdelingsenhed, som skal vises i brugergrænsefladen og ved afsendelse af kimdotcoins.</translation>
+        <translation>Vælg den standard underopdelingsenhed, som skal vises i brugergrænsefladen og ved afsendelse af Dotcoin.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Kimdotcoin addresses in the transaction list or not.</source>
-        <translation>Afgør hvorvidt Kimdotcoin-adresser skal vises i transaktionslisten eller ej.</translation>
+        <source>Whether to show Dotcoin addresses in the transaction list or not.</source>
+        <translation>Afgør hvorvidt Dotcoin-adresser skal vises i transaktionslisten eller ej.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -996,8 +996,8 @@ Adresse: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Kimdotcoin.</source>
-        <translation>Denne indstilling træder i kraft, efter Kimdotcoin genstartes.</translation>
+        <source>This setting will take effect after restarting Dotcoin.</source>
+        <translation>Denne indstilling træder i kraft, efter Dotcoin genstartes.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1015,8 +1015,8 @@ Adresse: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kimdotcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med Kimdotcoin-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dotcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med Dotcoin-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,8 +1069,8 @@ Adresse: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start kimdotcoin: click-to-pay handler</source>
-        <translation>Kan ikke starte kimdotcoin: click-to-pay-håndtering</translation>
+        <source>Cannot start Dotcoin: click-to-pay handler</source>
+        <translation>Kan ikke starte Dotcoin: click-to-pay-håndtering</translation>
     </message>
 </context>
 <context>
@@ -1219,8 +1219,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Kimdotcoin-Qt help message to get a list with possible Kimdotcoin command-line options.</source>
-        <translation>Vis Kimdotcoin-Qt-hjælpebeskeden for at få en liste over de tilgængelige Kimdotcoin-kommandolinjeindstillinger.</translation>
+        <source>Show the Dotcoin-Qt help message to get a list with possible Dotcoin command-line options.</source>
+        <translation>Vis Dotcoin-Qt-hjælpebeskeden for at få en liste over de tilgængelige Dotcoin-kommandolinjeindstillinger.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1239,13 +1239,13 @@ Adresse: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Kimdotcoin - Debug window</source>
-        <translation>Kimdotcoin - Fejlsøgningsvindue</translation>
+        <source>Dotcoin - Debug window</source>
+        <translation>Dotcoin - Fejlsøgningsvindue</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Kimdotcoin Core</source>
-        <translation>Kimdotcoin Core</translation>
+        <source>Dotcoin Core</source>
+        <translation>Dotcoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1254,8 +1254,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Kimdotcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Kimdotcoin-fejlsøgningslogfilen fra det nuværende datakatalog. Dette kan tage nogle få sekunder for en store logfiler.</translation>
+        <source>Open the Dotcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn Dotcoin-fejlsøgningslogfilen fra det nuværende datakatalog. Dette kan tage nogle få sekunder for en store logfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1264,8 +1264,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Kimdotcoin RPC console.</source>
-        <translation>Velkommen til Kimdotcoin RPC-konsollen</translation>
+        <source>Welcome to the Dotcoin RPC console.</source>
+        <translation>Velkommen til Dotcoin RPC-konsollen</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1290,7 +1290,7 @@ Adresse: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Send kimdotcoins</translation>
+        <translation>Send Dotcoin</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1340,7 +1340,7 @@ Adresse: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Bekræft afsendelse af kimdotcoins</translation>
+        <translation>Bekræft afsendelse af Dotcoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1385,7 +1385,7 @@ Adresse: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine kimdotcoins i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine kimdotcoins er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
+        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine Dotcoin i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine Dotcoin er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
     </message>
 </context>
 <context>
@@ -1408,7 +1408,7 @@ Adresse: %4
     <message>
         <location line="+34"/>
         <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Kimdotcoin-adressen som betalingen skal sendes til (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Dotcoin-adressen som betalingen skal sendes til (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1448,8 +1448,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Kimdotcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Indtast en Kimdotcoin-adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Dotcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Indtast en Dotcoin-adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1467,12 +1467,12 @@ Adresse: %4
     <message>
         <location line="+6"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Du kan underskrive beskeder med dine Kimdotcoin-adresser for at bevise, at de tilhører dig. Pas på ikke at underskrive noget vagt, da phisingangreb kan narre dig til at overdrage din identitet. Underskriv kun fuldt detaljerede udsagn, du er enig i.</translation>
+        <translation>Du kan underskrive beskeder med dine Dotcoin-adresser for at bevise, at de tilhører dig. Pas på ikke at underskrive noget vagt, da phisingangreb kan narre dig til at overdrage din identitet. Underskriv kun fuldt detaljerede udsagn, du er enig i.</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Kimdotcoin-adressen som beskeden skal underskrives med (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Dotcoin-adressen som beskeden skal underskrives med (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1513,8 +1513,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Kimdotcoin address</source>
-        <translation>Underskriv denne besked for at bevise, at Kimdotcoin-adressen tilhører dig</translation>
+        <source>Sign the message to prove you own this Dotcoin address</source>
+        <translation>Underskriv denne besked for at bevise, at Dotcoin-adressen tilhører dig</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1545,12 +1545,12 @@ Adresse: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Kimdotcoin-adressen som beskeden er underskrevet med (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Dotcoin-adressen som beskeden er underskrevet med (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Kimdotcoin address</source>
-        <translation>Efterprøv beskeden for at sikre, at den er underskrevet med den angivne Kimdotcoin-adresse</translation>
+        <source>Verify the message to ensure it was signed with the specified Dotcoin address</source>
+        <translation>Efterprøv beskeden for at sikre, at den er underskrevet med den angivne Dotcoin-adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,8 +1565,8 @@ Adresse: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Kimdotcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Indtast en Kimdotcoin-adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Dotcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Indtast en Dotcoin-adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,8 +1575,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Kimdotcoin signature</source>
-        <translation>Indtast Kimdotcoin-underskriften</translation>
+        <source>Enter Dotcoin signature</source>
+        <translation>Indtast Dotcoin-underskriften</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1649,8 +1649,8 @@ Adresse: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Kimdotcoin developers</source>
-        <translation>Kimdotcoin-udviklerne</translation>
+        <source>The Dotcoin developers</source>
+        <translation>Dotcoin-udviklerne</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1784,7 +1784,7 @@ Adresse: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Genererede kimdotcoins skal vente 120 blokke, før de kan blive brugt. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det mislykkes at komme ind i kæden, vil den skifte til &quot;ikke godkendt&quot; og ikke blive kunne bruges. Dette kan lejlighedsvis ske, hvis en anden knude genererer en blok inden for få sekunder af din.</translation>
+        <translation>Genererede Dotcoin skal vente 120 blokke, før de kan blive brugt. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det mislykkes at komme ind i kæden, vil den skifte til &quot;ikke godkendt&quot; og ikke blive kunne bruges. Dette kan lejlighedsvis ske, hvis en anden knude genererer en blok inden for få sekunder af din.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2137,7 +2137,7 @@ Adresse: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Send kimdotcoins</translation>
+        <translation>Send Dotcoin</translation>
     </message>
 </context>
 <context>
@@ -2184,11 +2184,11 @@ Adresse: %4
     </message>
 </context>
 <context>
-    <name>kimdotcoin-core</name>
+    <name>Dotcoin-core</name>
     <message>
-        <location filename="../kimdotcoinstrings.cpp" line="+94"/>
-        <source>Kimdotcoin version</source>
-        <translation>Kimdotcoin-version</translation>
+        <location filename="../bitcoinstrings.cpp" line="+94"/>
+        <source>Dotcoin version</source>
+        <translation>Dotcoin-version</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2197,8 +2197,8 @@ Adresse: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or kimdotcoind</source>
-        <translation>Send kommando til -server eller kimdotcoind</translation>
+        <source>Send command to -server or Dotcoind</source>
+        <translation>Send kommando til -server eller Dotcoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2217,13 +2217,13 @@ Adresse: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: kimdotcoin.conf)</source>
-        <translation>Angiv konfigurationsfil (standard: kimdotcoin.conf)</translation>
+        <source>Specify configuration file (default: Dotcoin.conf)</source>
+        <translation>Angiv konfigurationsfil (standard: Dotcoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: kimdotcoind.pid)</source>
-        <translation>Angiv pid-fil (default: kimdotcoind.pid)</translation>
+        <source>Specify pid file (default: Dotcoind.pid)</source>
+        <translation>Angiv pid-fil (default: Dotcoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2300,24 +2300,24 @@ Adresse: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=kimdotcoinrpc
+rpcuser=Dotcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Dotcoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, du skal angive en RPC-adgangskode i konfigurationsfilen:
 %s
 Det anbefales, at du bruger nedenstående, tilfældige adgangskode:
-rpcuser=kimdotcoinrpc
+rpcuser=Dotcoinrpc
 rpcpassword=%s
 (du behøver ikke huske denne adgangskode)
 Brugernavnet og adgangskode MÅ IKKE være det samme.
 Hvis filen ikke eksisterer, opret den og giv ingen andre end ejeren læserettighed.
 Det anbefales også at angive alertnotify, så du påmindes om problemer;
-f.eks.: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.com
+f.eks.: alertnotify=echo %%s | mail -s &quot;Dotcoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2332,18 +2332,18 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Kimdotcoin is probably already running.</source>
-        <translation>Kan ikke opnå lås på datakatalog %s. Kimdotcoin er sandsynligvis allerede startet.</translation>
+        <source>Cannot obtain a lock on data directory %s. Dotcoin is probably already running.</source>
+        <translation>Kan ikke opnå lås på datakatalog %s. Dotcoin er sandsynligvis allerede startet.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine kimdotcoins i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine kimdotcoins er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
+        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine Dotcoin i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine Dotcoin er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne kimdotcoins!</translation>
+        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne Dotcoin!</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2377,8 +2377,8 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Kimdotcoin will not work properly.</source>
-        <translation>Advarsel: Undersøg venligst, at din computers dato og klokkeslæt er korrekt indstillet! Hvis der er fejl i disse, vil Kimdotcoin ikke fungere korrekt.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dotcoin will not work properly.</source>
+        <translation>Advarsel: Undersøg venligst, at din computers dato og klokkeslæt er korrekt indstillet! Hvis der er fejl i disse, vil Dotcoin ikke fungere korrekt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2498,7 +2498,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.co
     <message>
         <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation>Skrivning af kimdotcoin-database mislykkedes</translation>
+        <translation>Skrivning af Dotcoin-database mislykkedes</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2518,7 +2518,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.co
     <message>
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
-        <translation>Generer kimdotcoins (standard: 0)</translation>
+        <translation>Generer Dotcoin (standard: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2627,8 +2627,8 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Kimdotcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-indstillinger: (se Kimdotcoin Wiki for SSL-opsætningsinstruktioner)</translation>
+        <source>SSL options: (see the Dotcoin Wiki for SSL setup instructions)</source>
+        <translation>SSL-indstillinger: (se Dotcoin Wiki for SSL-opsætningsinstruktioner)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2722,7 +2722,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <source>You need to rebuild the database</source>
         <translation>Du skal genbygge databaserne med -reindex for at ændre -txindex</translation>
     </message>
     <message>
@@ -2817,13 +2817,13 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Kimdotcoin</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebog kræver en nyere version af Kimdotcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Dotcoin</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebog kræver en nyere version af Dotcoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Kimdotcoin to complete</source>
-        <translation>Det var nødvendigt at genskrive tegnebogen: genstart Kimdotcoin for at gennemføre</translation>
+        <source>Wallet needed to be rewritten: restart Dotcoin to complete</source>
+        <translation>Det var nødvendigt at genskrive tegnebogen: genstart Dotcoin for at gennemføre</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2882,8 +2882,8 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Kimdotcoin is probably already running.</source>
-        <translation>Kunne ikke tildele %s på denne computer. Kimdotcoin kører sikkert allerede.</translation>
+        <source>Unable to bind to %s on this computer. Dotcoin is probably already running.</source>
+        <translation>Kunne ikke tildele %s på denne computer. Dotcoin kører sikkert allerede.</translation>
     </message>
     <message>
         <location line="+64"/>

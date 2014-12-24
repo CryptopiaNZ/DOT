@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Kimdotcoin</source>
-        <translation>Про Kimdotcoin</translation>
+        <source>About Dotcoin</source>
+        <translation>Про Dotcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Kimdotcoin&lt;/b&gt; version</source>
-        <translation>Версія &lt;b&gt;Kimdotcoin&apos;a&lt;b&gt;</translation>
+        <source>&lt;b&gt;Dotcoin&lt;/b&gt; version</source>
+        <translation>Версія &lt;b&gt;Dotcoin&apos;a&lt;b&gt;</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,7 +34,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Kimdotcoin developers</source>
+        <source>The Dotcoin developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -67,7 +67,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Kimdotcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Dotcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Це ваші адреси для отримання платежів. Ви можете давати різні адреси різним людям, таким чином маючи можливість відслідкувати хто конкретно і скільки вам заплатив.</translation>
     </message>
     <message>
@@ -82,7 +82,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Kimdotcoin address</source>
+        <source>Sign a message to prove you own a Dotcoin address</source>
         <translation>Підпишіть повідомлення щоб довести, що ви є власником цієї адреси</translation>
     </message>
     <message>
@@ -107,8 +107,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Kimdotcoin address</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Kimdotcoin-адресою</translation>
+        <source>Verify a message to ensure it was signed with a specified Dotcoin address</source>
+        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Dotcoin-адресою</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,7 +122,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Kimdotcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Dotcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -275,7 +275,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Kimdotcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your kimdotcoins from being stolen by malware infecting your computer.</source>
+        <source>Dotcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dotcoin from being stolen by malware infecting your computer.</source>
         <translation>Біткоін-клієнт буде закрито для завершення процесу шифрування. Пам&apos;ятайте, що шифрування гаманця не може повністю захистити ваші біткоіни від крадіжки, у випадку якщо ваш комп&apos;ютер буде інфіковано шкідливими програмами.</translation>
     </message>
     <message>
@@ -321,9 +321,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>KimdotcoinGUI</name>
+    <name>DotcoinGUI</name>
     <message>
-        <location filename="../kimdotcoingui.cpp" line="+233"/>
+        <location filename="../Dotcoingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
         <translation>&amp;Підписати повідомлення...</translation>
     </message>
@@ -374,8 +374,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Kimdotcoin</source>
-        <translation>Показати інформацію про Kimdotcoin</translation>
+        <source>Show information about Dotcoin</source>
+        <translation>Показати інформацію про Dotcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,12 +419,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Kimdotcoin address</source>
+        <source>Send coins to a Dotcoin address</source>
         <translation>Відправити монети на вказану адресу</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Kimdotcoin</source>
+        <source>Modify configuration options for Dotcoin</source>
         <translation>Редагувати параметри</translation>
     </message>
     <message>
@@ -455,8 +455,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Kimdotcoin</source>
-        <translation>Kimdotcoin</translation>
+        <source>Dotcoin</source>
+        <translation>Dotcoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Kimdotcoin</source>
-        <translation>&amp;Про Kimdotcoin</translation>
+        <source>&amp;About Dotcoin</source>
+        <translation>&amp;Про Dotcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Kimdotcoin addresses to prove you own them</source>
-        <translation>Підтвердіть, що Ви є власником повідомлення підписавши його Вашою Kimdotcoin-адресою </translation>
+        <source>Sign messages with your Dotcoin addresses to prove you own them</source>
+        <translation>Підтвердіть, що Ви є власником повідомлення підписавши його Вашою Dotcoin-адресою </translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Kimdotcoin addresses</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Kimdotcoin-адресою</translation>
+        <source>Verify messages to ensure they were signed with specified Dotcoin addresses</source>
+        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Dotcoin-адресою</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,12 +536,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Kimdotcoin client</source>
-        <translation>Kimdotcoin-клієнт</translation>
+        <source>Dotcoin client</source>
+        <translation>Dotcoin-клієнт</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Kimdotcoin network</source>
+        <source>%n active connection(s) to Dotcoin network</source>
         <translation><numerusform>%n активне з&apos;єднання з мережею</numerusform><numerusform>%n активні з&apos;єднання з мережею</numerusform><numerusform>%n активних з&apos;єднань з мережею</numerusform></translation>
     </message>
     <message>
@@ -656,8 +656,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Kimdotcoin address or malformed URI parameters.</source>
-        <translation>Неможливо обробити URI! Це може бути викликано неправильною Kimdotcoin-адресою, чи невірними параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Dotcoin address or malformed URI parameters.</source>
+        <translation>Неможливо обробити URI! Це може бути викликано неправильною Dotcoin-адресою, чи невірними параметрами URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,8 +670,8 @@ Address: %4
         <translation>&lt;b&gt;Зашифрований&lt;/b&gt; гаманець &lt;b&gt;заблоковано&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../kimdotcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Kimdotcoin can no longer continue safely and will quit.</source>
+        <location filename="../Dotcoin.cpp" line="+111"/>
+        <source>A fatal error occurred. Dotcoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -737,8 +737,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Kimdotcoin address.</source>
-        <translation>Введена адреса «%1» не є коректною адресою в мережі Kimdotcoin.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Dotcoin address.</source>
+        <translation>Введена адреса «%1» не є коректною адресою в мережі Dotcoin.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Kimdotcoin-Qt</source>
-        <translation>Kimdotcoin-Qt</translation>
+        <source>Dotcoin-Qt</source>
+        <translation>Dotcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,12 +819,12 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Kimdotcoin after logging in to the system.</source>
+        <source>Automatically start Dotcoin after logging in to the system.</source>
         <translation>Автоматично запускати гаманець при вході до системи.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Kimdotcoin on system login</source>
+        <source>&amp;Start Dotcoin on system login</source>
         <translation>&amp;Запускати гаманець при вході в систему</translation>
     </message>
     <message>
@@ -844,7 +844,7 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Kimdotcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Dotcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Автоматично відкривати порт для клієнту біткоін на роутері. Працює лише якщо ваш роутер підтримує UPnP і ця функція увімкнена.</translation>
     </message>
     <message>
@@ -854,8 +854,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Kimdotcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Підключатись до мережі Kimdotcoin через SOCKS-проксі (наприклад при використанні Tor).</translation>
+        <source>Connect to the Dotcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Підключатись до мережі Dotcoin через SOCKS-проксі (наприклад при використанні Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -929,8 +929,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Kimdotcoin.</source>
-        <translation>Встановлює мову інтерфейсу. Зміни набудуть чинності після перезапуску Kimdotcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Dotcoin.</source>
+        <translation>Встановлює мову інтерфейсу. Зміни набудуть чинності після перезапуску Dotcoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -944,7 +944,7 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Kimdotcoin addresses in the transaction list or not.</source>
+        <source>Whether to show Dotcoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -996,8 +996,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Kimdotcoin.</source>
-        <translation>Цей параметр набуде чинності після перезапуску Kimdotcoin.</translation>
+        <source>This setting will take effect after restarting Dotcoin.</source>
+        <translation>Цей параметр набуде чинності після перезапуску Dotcoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1015,8 +1015,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kimdotcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Показана інформація вже може бути застарілою. Ваш гаманець буде автоматично синхронізовано з мережею Kimdotcoin після встановлення підключення, але цей процес ще не завершено.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dotcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Показана інформація вже може бути застарілою. Ваш гаманець буде автоматично синхронізовано з мережею Dotcoin після встановлення підключення, але цей процес ще не завершено.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,7 +1069,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start kimdotcoin: click-to-pay handler</source>
+        <source>Cannot start Dotcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1219,8 +1219,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Kimdotcoin-Qt help message to get a list with possible Kimdotcoin command-line options.</source>
-        <translation>Показати довідку Kimdotcoin-Qt для отримання переліку можливих параметрів командного рядка.</translation>
+        <source>Show the Dotcoin-Qt help message to get a list with possible Dotcoin command-line options.</source>
+        <translation>Показати довідку Dotcoin-Qt для отримання переліку можливих параметрів командного рядка.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1239,12 +1239,12 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Kimdotcoin - Debug window</source>
-        <translation>Kimdotcoin - Вікно зневадження</translation>
+        <source>Dotcoin - Debug window</source>
+        <translation>Dotcoin - Вікно зневадження</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Kimdotcoin Core</source>
+        <source>Dotcoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1254,7 +1254,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Kimdotcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Dotcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1264,8 +1264,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Kimdotcoin RPC console.</source>
-        <translation>Вітаємо у консолі Kimdotcoin RPC.</translation>
+        <source>Welcome to the Dotcoin RPC console.</source>
+        <translation>Вітаємо у консолі Dotcoin RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1448,8 +1448,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Kimdotcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Введіть адресу Kimdotcoin (наприклад 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Dotcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Введіть адресу Dotcoin (наприклад 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1472,7 +1472,7 @@ Address: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Введіть адресу Kimdotcoin (наприклад 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Введіть адресу Dotcoin (наприклад 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1513,7 +1513,7 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Kimdotcoin address</source>
+        <source>Sign the message to prove you own this Dotcoin address</source>
         <translation>Підпишіть повідомлення щоб довести, що ви є власником цієї адреси</translation>
     </message>
     <message>
@@ -1545,12 +1545,12 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Введіть адресу Kimdotcoin (наприклад 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Введіть адресу Dotcoin (наприклад 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Kimdotcoin address</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Kimdotcoin-адресою</translation>
+        <source>Verify the message to ensure it was signed with the specified Dotcoin address</source>
+        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Dotcoin-адресою</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,8 +1565,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Kimdotcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Введіть адресу Kimdotcoin (наприклад 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Dotcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Введіть адресу Dotcoin (наприклад 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,8 +1575,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Kimdotcoin signature</source>
-        <translation>Введіть сигнатуру Kimdotcoin</translation>
+        <source>Enter Dotcoin signature</source>
+        <translation>Введіть сигнатуру Dotcoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1649,7 +1649,7 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Kimdotcoin developers</source>
+        <source>The Dotcoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2184,10 +2184,10 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>kimdotcoin-core</name>
+    <name>Dotcoin-core</name>
     <message>
-        <location filename="../kimdotcoinstrings.cpp" line="+94"/>
-        <source>Kimdotcoin version</source>
+        <location filename="../bitcoinstrings.cpp" line="+94"/>
+        <source>Dotcoin version</source>
         <translation>Версія</translation>
     </message>
     <message>
@@ -2197,7 +2197,7 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or kimdotcoind</source>
+        <source>Send command to -server or Dotcoind</source>
         <translation>Відправити команду серверу -server чи демону</translation>
     </message>
     <message>
@@ -2217,13 +2217,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: kimdotcoin.conf)</source>
-        <translation>Вкажіть файл конфігурації (типово: kimdotcoin.conf)</translation>
+        <source>Specify configuration file (default: Dotcoin.conf)</source>
+        <translation>Вкажіть файл конфігурації (типово: Dotcoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: kimdotcoind.pid)</source>
-        <translation>Вкажіть pid-файл (типово: kimdotcoind.pid)</translation>
+        <source>Specify pid file (default: Dotcoind.pid)</source>
+        <translation>Вкажіть pid-файл (типово: Dotcoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2300,13 +2300,13 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=kimdotcoinrpc
+rpcuser=Dotcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Dotcoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2322,7 +2322,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Kimdotcoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Dotcoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2367,8 +2367,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Kimdotcoin will not work properly.</source>
-        <translation>Увага: будь ласка, перевірте дату і час на своєму комп&apos;ютері. Якщо ваш годинник йде неправильно, Kimdotcoin може працювати некоректно.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dotcoin will not work properly.</source>
+        <translation>Увага: будь ласка, перевірте дату і час на своєму комп&apos;ютері. Якщо ваш годинник йде неправильно, Dotcoin може працювати некоректно.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2617,8 +2617,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Kimdotcoin Wiki for SSL setup instructions)</source>
-        <translation>Параметри SSL: (див. Kimdotcoin Wiki для налаштування SSL)</translation>
+        <source>SSL options: (see the Dotcoin Wiki for SSL setup instructions)</source>
+        <translation>Параметри SSL: (див. Dotcoin Wiki для налаштування SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2712,7 +2712,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <source>You need to rebuild the database</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2807,12 +2807,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Kimdotcoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Dotcoin</source>
         <translation>Помилка при завантаженні wallet.dat: Гаманець потребує новішої версії Біткоін-клієнта</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Kimdotcoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Dotcoin to complete</source>
         <translation>Потрібно перезаписати гаманець: перезапустіть Біткоін-клієнт для завершення</translation>
     </message>
     <message>
@@ -2872,7 +2872,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Kimdotcoin Alert&quot; admin@f
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Kimdotcoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Dotcoin is probably already running.</source>
         <translation>Неможливо прив&apos;язати до порту %s на цьому комп&apos;ютері. Можливо гаманець вже запущено.</translation>
     </message>
     <message>

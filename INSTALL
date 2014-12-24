@@ -1,9 +1,9 @@
-Building Kimdotcoin
+Building Dotcoin
 
-See doc/readme-qt.rst for instructions on building Kimdotcoin-Qt,
+See doc/readme-qt.rst for instructions on building Dotcoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Kimdotcoin.
+implementation of Dotcoin.
 
-See doc/build-*.txt for instructions on building kimdotcoind,
+See doc/build-*.txt for instructions on building Dotcoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of Kimdotcoin.
+implementation of Dotcoin.

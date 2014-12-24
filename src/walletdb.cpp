@@ -488,7 +488,7 @@ DBErrors CWalletDB::LoadWallet(CWallet* pwallet)
 void ThreadFlushWalletDB(const string& strFile)
 {
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("kimdotcoin-wallet");
+    RenameThread("Dotcoin-wallet");
 
     static bool fOneThread;
     if (fOneThread)

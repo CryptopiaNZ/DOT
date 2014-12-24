@@ -7,7 +7,7 @@
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a kimdotcoind or Kimdotcoin-Qt running
+# Assumes it will talk to a Dotcoind or Dotcoin-Qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -40,8 +40,8 @@ def determine_db_dir():
         return os.path.join(os.environ['APPDATA'], "Bitcoin")
     return os.path.expanduser("~/.bitcoin")
 
-def read_kimdotcoin.config(dbdir):
-    """Read the kimdotcoin.conf file from dbdir, returns dictionary of settings"""
+def read_Dotcoin.config(dbdir):
+    """Read the Dotcoin.conf file from dbdir, returns dictionary of settings"""
     from ConfigParser import SafeConfigParser
 
     class FakeSecHead(object):
@@ -59,7 +59,7 @@ def read_kimdotcoin.config(dbdir):
                 return s
 
     config_parser = SafeConfigParser()
-    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "kimdotcoin.conf"))))
+    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "Dotcoin.conf"))))
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
@@ -72,7 +72,7 @@ def connect_JSON(config):
     try:
         result = ServiceProxy(connect)
         # ServiceProxy is lazy-connect, so send an RPC command mostly to catch connection errors,
-        # but also make sure the kimdotcoind we're talking to is/isn't testnet:
+        # but also make sure the Dotcoind we're talking to is/isn't testnet:
         if result.getmininginfo()['testnet'] != testnet:
             sys.stderr.write("RPC server at "+connect+" testnet setting mismatch\n")
             sys.exit(1)
@@ -81,32 +81,32 @@ def connect_JSON(config):
         sys.stderr.write("Error connecting to RPC server at "+connect+"\n")
         sys.exit(1)
 
-def unlock_wallet(kimdotcoind):
-    info = kimdotcoind.getinfo()
+def unlock_wallet(Dotcoind):
+    info = Dotcoind.getinfo()
     if 'unlocked_until' not in info:
         return True # wallet is not encrypted
     t = int(info['unlocked_until'])
     if t <= time.time():
         try:
             passphrase = getpass.getpass("Wallet is locked; enter passphrase: ")
-            kimdotcoind.walletpassphrase(passphrase, 5)
+            Dotcoind.walletpassphrase(passphrase, 5)
         except:
             sys.stderr.write("Wrong passphrase\n")
 
-    info = kimdotcoind.getinfo()
+    info = Dotcoind.getinfo()
     return int(info['unlocked_until']) > time.time()
 
-def list_available(kimdotcoind):
+def list_available(Dotcoind):
     address_summary = dict()
 
     address_to_account = dict()
-    for info in kimdotcoind.listreceivedbyaddress(0):
+    for info in Dotcoind.listreceivedbyaddress(0):
         address_to_account[info["address"]] = info["account"]
 
-    unspent = kimdotcoind.listunspent(0)
+    unspent = Dotcoind.listunspent(0)
     for output in unspent:
         # listunspent doesn't give addresses, so:
-        rawtx = kimdotcoind.getrawtransaction(output['txid'], 1)
+        rawtx = Dotcoind.getrawtransaction(output['txid'], 1)
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
@@ -139,8 +139,8 @@ def select_coins(needed, inputs):
         n += 1
     return (outputs, have-needed)
 
-def create_tx(kimdotcoind, fromaddresses, toaddress, amount, fee):
-    all_coins = list_available(kimdotcoind)
+def create_tx(Dotcoind, fromaddresses, toaddress, amount, fee):
+    all_coins = list_available(Dotcoind)
 
     total_available = Decimal("0.0")
     needed = amount+fee
@@ -159,7 +159,7 @@ def create_tx(kimdotcoind, fromaddresses, toaddress, amount, fee):
     # Note:
     # Python's json/jsonrpc modules have inconsistent support for Decimal numbers.
     # Instead of wrestling with getting json.dumps() (used by jsonrpc) to encode
-    # Decimals, I'm casting amounts to float before sending them to kimdotcoind.
+    # Decimals, I'm casting amounts to float before sending them to Dotcoind.
     #  
     outputs = { toaddress : float(amount) }
     (inputs, change_amount) = select_coins(needed, potential_inputs)
@@ -170,8 +170,8 @@ def create_tx(kimdotcoind, fromaddresses, toaddress, amount, fee):
         else:
             outputs[change_address] = float(change_amount)
 
-    rawtx = kimdotcoind.createrawtransaction(inputs, outputs)
-    signed_rawtx = kimdotcoind.signrawtransaction(rawtx)
+    rawtx = Dotcoind.createrawtransaction(inputs, outputs)
+    signed_rawtx = Dotcoind.signrawtransaction(rawtx)
     if not signed_rawtx["complete"]:
         sys.stderr.write("signrawtransaction failed\n")
         sys.exit(1)
@@ -179,10 +179,10 @@ def create_tx(kimdotcoind, fromaddresses, toaddress, amount, fee):
 
     return txdata
 
-def compute_amount_in(kimdotcoind, txinfo):
+def compute_amount_in(Dotcoind, txinfo):
     result = Decimal("0.0")
     for vin in txinfo['vin']:
-        in_info = kimdotcoind.getrawtransaction(vin['txid'], 1)
+        in_info = Dotcoind.getrawtransaction(vin['txid'], 1)
         vout = in_info['vout'][vin['vout']]
         result = result + vout['value']
     return result
@@ -193,12 +193,12 @@ def compute_amount_out(txinfo):
         result = result + vout['value']
     return result
 
-def sanity_test_fee(kimdotcoind, txdata_hex, max_fee):
+def sanity_test_fee(Dotcoind, txdata_hex, max_fee):
     class FeeError(RuntimeError):
         pass
     try:
-        txinfo = kimdotcoind.decoderawtransaction(txdata_hex)
-        total_in = compute_amount_in(kimdotcoind, txinfo)
+        txinfo = Dotcoind.decoderawtransaction(txdata_hex)
+        total_in = compute_amount_in(Dotcoind, txinfo)
         total_out = compute_amount_out(txinfo)
         if total_in-total_out > max_fee:
             raise FeeError("Rejecting transaction, unreasonable fee of "+str(total_in-total_out))
@@ -229,7 +229,7 @@ def main():
     parser.add_option("--fee", dest="fee", default="0.0",
                       help="fee to include")
     parser.add_option("--datadir", dest="datadir", default=determine_db_dir(),
-                      help="location of kimdotcoin.conf file with RPC username/password (default: %default)")
+                      help="location of Dotcoin.conf file with RPC username/password (default: %default)")
     parser.add_option("--testnet", dest="testnet", default=False, action="store_true",
                       help="Use the test network")
     parser.add_option("--dry_run", dest="dry_run", default=False, action="store_true",
@@ -238,12 +238,12 @@ def main():
     (options, args) = parser.parse_args()
 
     check_json_precision()
-    config = read_kimdotcoin.config(options.datadir)
+    config = read_Dotcoin.config(options.datadir)
     if options.testnet: config['testnet'] = True
-    kimdotcoind = connect_JSON(config)
+    Dotcoind = connect_JSON(config)
 
     if options.amount is None:
-        address_summary = list_available(kimdotcoind)
+        address_summary = list_available(Dotcoind)
         for address,info in address_summary.iteritems():
             n_transactions = len(info['outputs'])
             if n_transactions > 1:
@@ -253,14 +253,14 @@ def main():
     else:
         fee = Decimal(options.fee)
         amount = Decimal(options.amount)
-        while unlock_wallet(kimdotcoind) == False:
+        while unlock_wallet(Dotcoind) == False:
             pass # Keep asking for passphrase until they get it right
-        txdata = create_tx(kimdotcoind, options.fromaddresses.split(","), options.to, amount, fee)
-        sanity_test_fee(kimdotcoind, txdata, amount*Decimal("0.01"))
+        txdata = create_tx(Dotcoind, options.fromaddresses.split(","), options.to, amount, fee)
+        sanity_test_fee(Dotcoind, txdata, amount*Decimal("0.01"))
         if options.dry_run:
             print(txdata)
         else:
-            txid = kimdotcoind.sendrawtransaction(txdata)
+            txid = Dotcoind.sendrawtransaction(txdata)
             print(txid)
 
 if __name__ == '__main__':

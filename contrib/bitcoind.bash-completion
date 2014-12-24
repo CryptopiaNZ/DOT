@@ -1,11 +1,11 @@
-# bash programmable completion for kimdotcoind(1)
+# bash programmable completion for Dotcoind(1)
 # Copyright (c) 2012 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have kimdotcoind && {
+have Dotcoind && {
 
-# call $kimdotcoind for RPC
+# call $Dotcoind for RPC
 _bitcoin_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
@@ -16,7 +16,7 @@ _bitcoin_rpc() {
                 ;;
         esac
     done
-    $kimdotcoind "${rpcargs[@]}" "$@"
+    $Dotcoind "${rpcargs[@]}" "$@"
 }
 
 # Add bitcoin accounts to COMPREPLY
@@ -26,13 +26,13 @@ _bitcoin_accounts() {
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_kimdotcoind() {
+_Dotcoind() {
     local cur prev words=() cword
-    local kimdotcoind
+    local Dotcoind
 
-    # save and use original argument to invoke kimdotcoind
-    # kimdotcoind might not be in $PATH
-    kimdotcoind="$1"
+    # save and use original argument to invoke Dotcoind
+    # Dotcoind might not be in $PATH
+    Dotcoind="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -84,7 +84,7 @@ _kimdotcoind() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($kimdotcoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($Dotcoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
@@ -103,7 +103,7 @@ _kimdotcoind() {
     esac
 }
 
-complete -F _kimdotcoind kimdotcoind
+complete -F _Dotcoind Dotcoind
 }
 
 # Local variables:

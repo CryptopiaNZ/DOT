@@ -53,7 +53,7 @@ config file):
   HiddenServicePort 19745 127.0.0.1:19745
 
 The directory can be different of course, but (both) port numbers should be equal to
-your kimdotcoind's P2P listen port (19745 by default).
+your Dotcoind's P2P listen port (19745 by default).
 
 -externalip=X   You can tell bitcoin about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -75,13 +75,13 @@ your kimdotcoind's P2P listen port (19745 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-  ./kimdotcoind -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
+  ./Dotcoind -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
 
 (obviously, replace the Onion address with your own). If you don't care too much
 about hiding your node, and want to be reachable on IPv4 as well, additionally
 specify:
 
-  ./kimdotcoind ... -discover
+  ./Dotcoind ... -discover
 
 and open port 19745 on your firewall (or use -upnp).
 

@@ -402,7 +402,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 void ThreadGetMyExternalIP(void* parg)
 {
     // Make this thread recognisable as the external IP detection thread
-    RenameThread("kimdotcoin-ext-ip");
+    RenameThread("Dotcoin-ext-ip");
 
     CNetAddr addrLocalHost;
     if (GetMyExternalIP(addrLocalHost))
@@ -1111,7 +1111,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "Kimdotcoin " + FormatFullVersion();
+        string strDesc = "Dotcoin " + FormatFullVersion();
 
         try {
             loop {
@@ -1181,17 +1181,22 @@ void MapPort(bool)
 
 
 
-
-
-
-
-
 // DNS seeds
 // Each pair gives a source name and a seed name.
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
+	{"107.150.38.154", "107.150.38.154"},
+	{"111.69.142.230", "111.69.142.230"},
+	{"stratumtest.ddns.net", "stratumtest.ddns.net"},
     {"seeds.triplehexxx.net", "dot.seeds.triplehexxx.net"},
+	{"111.69.136.36", "111.69.136.36"},
+	{"173.176.17.69", "173.176.17.69"},
+	{"62.255.117.105", "62.255.117.105"},
+	{"121.73.160.69", "121.73.160.69"},
+	{"74.91.20.250", "74.91.20.250"},
+	
+	
     {NULL, NULL}
 };
 
@@ -1678,7 +1683,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Kimdotcoin is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. Dotcoin is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());

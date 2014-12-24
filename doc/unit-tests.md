@@ -1,14 +1,14 @@
-Compiling/running kimdotcoind unit tests
+Compiling/running Dotcoind unit tests
 ------------------------------------
 
-kimdotcoind unit tests are in the `src/test/` directory; they
+Dotcoind unit tests are in the `src/test/` directory; they
 use the Boost::Test unit-testing framework.
 
 To compile and run the tests:
 
 	cd src
-	make -f makefile.unix test_kimdotcoin  # Replace makefile.unix if you're not on unix
-	./test_kimdotcoin   # Runs the unit tests
+	make -f makefile.unix test_Dotcoin  # Replace makefile.unix if you're not on unix
+	./test_Dotcoin   # Runs the unit tests
 
 If all tests succeed the last line of output will be:
 `*** No errors detected`
@@ -16,13 +16,13 @@ If all tests succeed the last line of output will be:
 To add more tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections (the makefiles are
-set up to add test/*.cpp to test_kimdotcoin automatically).
+set up to add test/*.cpp to test_Dotcoin automatically).
 
 
-Compiling/running Kimdotcoin-Qt unit tests
+Compiling/running Dotcoin-Qt unit tests
 ---------------------------------------
 
-Kimdotcoin-Qt unit tests are in the src/qt/test/ directory; they
+Dotcoin-Qt unit tests are in the src/qt/test/ directory; they
 use the Qt unit-testing framework.
 
 To compile and run the tests:
