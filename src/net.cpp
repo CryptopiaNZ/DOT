@@ -1186,17 +1186,11 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-	{"107.150.38.154", "107.150.38.154"},
-	{"111.69.142.230", "111.69.142.230"},
-	{"stratumtest.ddns.net", "stratumtest.ddns.net"},
-    {"seeds.triplehexxx.net", "dot.seeds.triplehexxx.net"},
-	{"111.69.136.36", "111.69.136.36"},
-	{"173.176.17.69", "173.176.17.69"},
-	{"62.255.117.105", "62.255.117.105"},
-	{"121.73.160.69", "121.73.160.69"},
-	{"74.91.20.250", "74.91.20.250"},
-	
-	
+	{"162.255.117.105", "162.255.117.105"},
+	{"nodes1.cryptopia.co.nz", "nodes1.cryptopia.co.nz"},
+	{"nodes1.cryptopia.co.nz", "nodes2.cryptopia.co.nz"},
+	{"pools2.cryptopia.co.nz", "pools1.cryptopia.co.nz"},
+	{"pools2.cryptopia.co.nz", "pools2.cryptopia.co.nz"},
     {NULL, NULL}
 };
 
