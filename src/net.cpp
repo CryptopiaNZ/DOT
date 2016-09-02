@@ -1188,7 +1188,7 @@ void MapPort(bool)
 static const char *strMainNetDNSSeed[][2] = {
 	{"162.255.117.105", "162.255.117.105"},
 	{"nodes1.cryptopia.co.nz", "nodes1.cryptopia.co.nz"},
-	{"nodes1.cryptopia.co.nz", "nodes2.cryptopia.co.nz"},
+	{"nodes2.cryptopia.co.nz", "nodes2.cryptopia.co.nz"},
 	{"pools2.cryptopia.co.nz", "pools1.cryptopia.co.nz"},
 	{"pools2.cryptopia.co.nz", "pools2.cryptopia.co.nz"},
     {NULL, NULL}
