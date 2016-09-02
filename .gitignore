@@ -13,12 +13,10 @@ src/test_kimdotcoin
 
 # Compilation and Qt preprocessor part
 *.qm
-Makefile
 kimdotcoin-qt
 Kimdotcoin-Qt.app
 
 # Unit-tests
-Makefile.test
 kimdotcoin-qt_test
 
 # Resources cpp
